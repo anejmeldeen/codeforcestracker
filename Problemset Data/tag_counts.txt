@@ -1,0 +1,37 @@
+greedy:3173
+math:3144
+implementation:2893
+dp:2294
+constructive algorithms:1906
+data structures:1881
+brute force:1853
+binary search:1173
+sortings:1151
+graphs:1148
+dfs and similar:1001
+trees:872
+number theory:808
+strings:768
+combinatorics:735
+bitmasks:627
+two pointers:589
+*special:546
+geometry:412
+dsu:382
+divide and conquer:320
+shortest paths:284
+games:257
+interactive:254
+probabilities:245
+hashing:225
+flows:158
+matrices:131
+fft:102
+graph matchings:98
+string suffix structures:94
+ternary search:63
+meet-in-the-middle:50
+2-sat:39
+expression parsing:38
+chinese remainder theorem:21
+schedules:12
