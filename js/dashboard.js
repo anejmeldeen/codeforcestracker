@@ -56,8 +56,6 @@ const MOST_COMMON = new Set([
   "two pointers",
 ]);
 
-window.history.replaceState(null, '', '/dashboard.html');
-
 const params = new URLSearchParams(window.location.search);
 let handle = params.get("handle");
 document.getElementById("userHandle").textContent = handle || "Unknown";
