@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeforces Tracker</title>
+    <link rel="stylesheet" href="styles/styles.css?v=3" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+
+  <body>
+    <div id="popup" class="popup hidden"></div>
+    <div class="container">
+      <header class="fade-in">
+        <h1 class="slide-up">Codeforces Stats Tracker</h1>
+        <p class="slide-up delay-1">
+          Analyze your strengths, weaknesses, and progress.
+        </p>
+      </header>
+
+      <section class="search fade-in delay-2">
+        <input
+          type="text"
+          id="handleInput"
+          placeholder="Enter your Codeforces handle..."
+        />
+        <button onclick="trackHandle()">Track</button>
+      </section>
+
+      <footer class="fade-in delay-3">
+        <p>Made by Ali Nejmeldeen</p>
+      </footer>
+    </div>
+
+    <script src="js/handle-manager.js"></script>
+  </body>
+</html>

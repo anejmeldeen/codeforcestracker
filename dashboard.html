@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Codeforces Tracker</title>
+    <link rel="stylesheet" href="styles/dashboard.css?v=3" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  </head>
+  <body>
+    <div class="wash-out-bg">
+      <div id="loadingScreen">
+        <div class="spinner"></div>
+        <p>Loading your Codeforces data...</p>
+      </div>
+    </div>
+    <div class="dashboard-container">
+      <header class="dashboard-topbar">
+        <div class="topbar-left">
+          <div class="user-info">
+            <img id="userAvatar" src="" alt="User Avatar" />
+            <div>
+              <h1 id="userHandle">Handle</h1>
+              <p id="userRating">Rating: -</p>
+            </div>
+          </div>
+          <a id="cfProfileBtn" class="cf-button" target="_blank"
+            >View Codeforces Profile</a
+          >
+        </div>
+      </header>
+
+      <main class="dashboard-content">
+        <section class="card graph-card">
+          <h2>Rating Over Time</h2>
+          <canvas id="ratingChart" width="600" height="300"></canvas>
+        </section>
+
+        <section class="card tags-card">
+          <h2>Recent Submissions</h2>
+          <div class="recent-submissions" id="recentSubmissions"></div>
+        </section>
+
+        <section class="card extra-card">
+          <h2>Submission Breakdown</h2>
+          <canvas id="verdictChart" width="300" height="300"></canvas>
+        </section>
+
+        <section class="card extra-card">
+          <h2>Problem Difficulty</h2>
+          <h3 id="problems-solved">Problems Solved:</h3>
+          <canvas id="ratingBarChart" width="600" height="550"></canvas>
+        </section>
+
+        <section class="card extra-card">
+          <h2>Problems by Tag</h2>
+          <div class="tags-location">
+            <p>Tag data will go here.</p>
+          </div>
+        </section>
+
+        <section class="card recommended-card">
+          <h2>Recommended Problems</h2>
+          <div class="recommended-strip" id="recommendedProblems"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
