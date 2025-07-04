@@ -203,7 +203,7 @@ footer {
   width: 32px;
   height: 32px;
   transition: transform 0.2s ease, filter 0.2s ease;
-  filter: grayscale(100%) brightness(0.9);
+  filter: grayscale(10%) brightness(1);
 }
 
 .social-box a:hover img {
