@@ -15,6 +15,30 @@ body {
   overflow-x: hidden;
 }
 
+body.loading {
+  overflow: hidden;
+}
+
+.home-button {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 12px;
+  background-color: #3b82f6; /* Blue-500 */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  align-self: right;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+  outline: none;
+  background-color: #4781ff; /* Blue-600 */
+}
+
 .dashboard-container {
   width: 100%;
   max-width: 1200px;
@@ -120,7 +144,8 @@ body {
 }
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(255, 204, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3),
+    inset 0 0 15px rgba(255, 204, 0, 0.1);
 }
 
 .card h2 {

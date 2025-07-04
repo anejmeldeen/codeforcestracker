@@ -729,6 +729,7 @@ async function loadData() {
     // now that data is ready, hide loader and show dashboard
     document.getElementById("loadingScreen").style.display = "none";
     document.querySelector(".dashboard-container").style.display = "block";
+    document.body.classList.remove('loading');
   } catch (err) {
     console.error("Error fetching data", err);
     localStorage.setItem("error", "Unable to fetch user data.");
