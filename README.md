@@ -1,5 +1,5 @@
 # Codeforces Tracker
-### Webpage can be found [here](https://codeforcetracker.com)
+### Webpage can be found [here](https://codeforcestracker.com)
 
 A clean and interactive dashboard to visualize Codeforces performance and problem-solving history. 
 Provides users with analysis for their rating progression and weaknesses over time.
